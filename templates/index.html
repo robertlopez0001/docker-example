@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FastAPI Website</title>
+    <script>
+        async function callAPI() {
+            const response = await fetch("/hello/");
+            const data = await response.json();
+            alert(data);
+            
+        }
+
+    </script>
+</head>
+<body>
+    <h1>Welcome to FastAPI</h1>
+    <button onclick="callAPI()">Click Me</button>
+</body>
+</html>
